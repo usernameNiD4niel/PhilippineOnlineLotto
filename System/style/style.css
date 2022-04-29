@@ -1,0 +1,617 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+header .logo a img {
+  width: 150px;
+}
+
+header .logo a h6 {
+  position: absolute;
+  left: 99px;
+  font-size: 0.9rem;
+}
+
+header ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 15em;
+  margin-right: 15em;
+}
+
+header ul li {
+  margin-right: 2.5em;
+}
+
+header ul li a {
+  text-decoration: none;
+}
+
+header ul li .active {
+  font-weight: bold;
+  color: #7246E4;
+}
+
+header .accButton a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 0.75rem 2rem;
+}
+
+header .accButton .decoratedBtn {
+  border-radius: 25px;
+  font-size: 0.8rem;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5057ed), to(#e010cf));
+  background: linear-gradient(to bottom, #5057ed 0%, #e010cf 100%);
+}
+
+.mainIndex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5em;
+}
+
+.mainIndex .firstRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+}
+
+.mainIndex .firstRow section > img {
+  width: 290px;
+}
+
+.mainIndex .firstRow .firstColumn {
+  width: 40%;
+  margin-right: 15%;
+}
+
+.mainIndex .firstRow .firstColumn .buttonViewHistory {
+  width: 10em;
+  padding: 1em 0;
+  margin-top: 2em;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5057ed), to(#e010cf));
+  background: linear-gradient(to bottom, #5057ed 0%, #e010cf 100%);
+  font-size: 0.85rem;
+}
+
+.mainIndex .secondRow {
+  margin-top: 100px;
+  width: 100%;
+  background: #EEEEEE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 800px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainIndex .secondRow-textContent {
+  width: 40%;
+}
+
+.mainIndex .secondRow-textContent-tittle {
+  color: #3f46cf;
+  font-size: 1.5rem;
+  margin-bottom: 0.8em;
+}
+
+.mainIndex .secondRow-itemContent {
+  width: 30%;
+  display: -ms-grid;
+  display: grid;
+  height: 300px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.mainIndex .secondRow-itemContent-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: yellow;
+}
+
+.mainIndex .secondRow-itemContent-circle p {
+  text-align: center;
+  line-height: 5.55rem;
+  font-size: 1.3rem;
+  color: #3f46cf;
+}
+
+.mainIndex .thirdRow {
+  background: #CFD1E6;
+  width: 100%;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.mainIndex .thirdRow h2 {
+  margin-left: 300px;
+  color: #7246E4;
+}
+
+.mainIndex .thirdRow .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10px auto;
+  width: 1000px;
+  overflow: auto;
+  padding: 1em 3em;
+  white-space: nowrap;
+}
+
+.mainIndex .thirdRow .card-container .card {
+  width: 20vw;
+  margin-left: 2em;
+  height: 300px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+}
+
+.mainIndex .thirdRow .card-container .card .tayaHeader {
+  width: 100%;
+  background: yellow;
+  border-radius: 25px 25px 0 0;
+  height: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #7246E4;
+}
+
+.mainIndex .thirdRow .card-container .card .tayaContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 1em;
+  height: 60%;
+}
+
+.mainIndex .thirdRow .card-container .card .tayaContent p {
+  margin-bottom: 1em;
+  font-size: 0.9rem;
+  color: #7246E4;
+}
+
+.mainIndex .fourthRow {
+  width: 100%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainIndex .fourthRow-grandLotto {
+  width: 70%;
+  padding: 1em 5em;
+}
+
+.mainIndex .fourthRow-grandLotto h3 {
+  color: #7246E4;
+  font-size: 1.2rem;
+}
+
+.mainIndex .fourthRow-grandLotto-box {
+  margin-left: 5em;
+  background: #F5CBF6;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.mainIndex .fourthRow-grandLotto-box-taya {
+  height: 100px;
+  width: 20%;
+  border-radius: 25px 0 0 25px;
+  background: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainIndex .fourthRow-grandLotto-box-context {
+  padding: 0 1rem;
+}
+
+.mainIndex .fourthRow-grandLotto-box-context h4 {
+  color: #7246E4;
+}
+
+.mainIndex .fourthRow-grandLotto-box-context p {
+  color: #7246E4;
+}
+
+.mainIndex .secondRowAbout {
+  width: 100vw;
+  background: #09065C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 750px;
+}
+
+.mainIndex .secondRowAbout-card {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #7246E4;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 390px;
+  padding: 1em 2em;
+  color: #7246E4;
+  text-align: justify;
+  margin-right: 1em;
+}
+
+.mainIndex .secondRowAbout-card .marginBottom {
+  margin-bottom: 1.5em;
+}
+
+.mainIndex #reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.mainIndex .firstRowBet {
+  width: 100%;
+  padding-top: 3em;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainIndex .firstRowBet-textContent {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50vh;
+  padding-left: 3em;
+}
+
+.mainIndex .firstRowBet-textContent h1 {
+  font-size: 3rem;
+  color: #C31DD2;
+}
+
+.mainIndex .firstRowBet-textContent h2 {
+  font-size: 2rem;
+  color: #C31DD2;
+}
+
+.mainIndex .firstRowBet-textContent h3 {
+  font-size: 2rem;
+  color: #C31DD2;
+}
+
+.mainIndex .firstRowBet-textContent * {
+  margin-bottom: 0.5em;
+}
+
+.mainIndex .firstRowBet-box {
+  width: 30%;
+  height: 40vh;
+  border: 1px solid #7246E4;
+}
+
+.mainIndex .firstRowBet-box-buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 1.6em;
+  margin-top: 1em;
+}
+
+.mainIndex .firstRowBet-box-buttons .confirmbutton {
+  border-radius: 25px;
+  font-size: 0.8rem;
+  color: #fff;
+  width: 90px;
+  border: 0;
+  outline: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5057ed), to(#e010cf));
+  background: linear-gradient(to bottom, #5057ed 0%, #e010cf 100%);
+}
+
+.mainIndex .firstRowBet-box-buttons .resetbutton {
+  background-color: transparent;
+  color: #7246E4;
+  border: 0;
+  font-size: 0.8rem;
+  margin-left: 1em;
+}
+
+.mainIndex .firstRowBet-box-buttons button {
+  background-color: #7246E4;
+  font-size: 1rem;
+  border-radius: 15px;
+  color: #fff;
+  padding: .8em .5em;
+}
+
+.mainIndex .firstRowBet-box-numbers {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[9];
+      grid-template-columns: repeat(9, 1fr);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+}
+
+.mainIndex .firstRowBet-box-numbers p {
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 0.75em;
+  color: #CFD1E6;
+  line-height: 30px;
+  background: #7246E4;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.mainIndex .firstRowBet-box-numbers p:hover {
+  background: #C31DD2;
+}
+
+.mainIndex .firstRowBet-box-header {
+  width: 100%;
+  padding: 1em 0;
+  background: #D8D8D8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainIndex .firstRowBet-box-header * {
+  color: #7246E4;
+}
+
+footer {
+  width: 100vw;
+  height: 350px;
+  background: #000;
+}
+/*# sourceMappingURL=style.css.map */

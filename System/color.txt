@@ -1,0 +1,11 @@
+ACTION #5058ED & #DE10CC
+BG/TEXT white or black
+background: hsla(237, 81%, 62%, 1);
+
+background: linear-gradient(90deg, hsla(237, 81%, 62%, 1) 0%, hsla(305, 87%, 47%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(237, 81%, 62%, 1) 0%, hsla(305, 87%, 47%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(237, 81%, 62%, 1) 0%, hsla(305, 87%, 47%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5058ED", endColorstr="#DE10CC", GradientType=1 );
